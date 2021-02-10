@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Your gorgeous description" />
+  <!--prevents search engines from indexing and following ALL the links on the page;
+    <meta name="robots" content="noindex, nofollow">
+  -->
+  <!--pages with identical content
+    <link href="URL" rel="canonical">
+  -->
+
+  <!--SOCIAL MEDIA-->
+  <meta property="og:title" content="European Travel Destinations" />
+  <meta property="og:description" content="Offering tour packages for individuals or groups." />
+  <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg" />
+  <meta property="og:url" content="http://euro-travel-example.com/index.htm" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!--NOT ESSEINTIAL-->
+  <meta property="og:site_name" content="European Travel, Inc." />
+  <!-- This provides an alternative image description for those who are visually impaired. -->
+  <meta name="twitter:image:alt" content="Alt text for image" />
+
+  <!--CSS Style Sheets-->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!--FONTAWESOME Style Sheet-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  <script src="./js/hamburger-toggle.js"></script>
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <section id="navbar">
+      <div id="branding" class="branding">
+        <!--logo-->
+        <a href="#" class="navbar-item">
+          <img src="https://assets.stickpng.com/images/58428defa6515b1e0ad75ab4.png" alt="logo" width="100" height="46" />
+        </a>
+        <!--burger menu-->
+        <a href="#" id="burger" onclick="myFunction(this)" class="toggle navbar-burger burger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>
+      </div>
+      <!--branding ends-->
+
+      <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="" class="navbar-item"> item-1 </a>
+          <a href="" class="navbar-item"> item-2 </a>
+
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link"> Item-3 More </a>
+             <div class="navbar-dropdown">
+              <a class="navbar-item"> Jobs </a>
+              <a class="navbar-item"> Contact </a>   
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> Report an issue </a>
+                <div class="navbar-item has-dropdown">
+                <a class="navbar-link"> Sub-Sub More</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item"> Jobs </a>
+                  <a class="navbar-item"> Contact </a>
+                  <a class="navbar-item"> Jobs </a>
+                  <a class="navbar-item"> Contact </a>
+                  <a class="navbar-item"> Jobs </a>
+                  <a class="navbar-item"> Contact </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item"> Report an issue </a>
+                </div>
+              </div>         
+            </div>
+          </div>
+          <!--has-dropdown-->
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link"> Item-4 More </a>
+             <div class="navbar-dropdown">
+              <a class="navbar-item"> Jobs </a>
+              <a class="navbar-item"> Contact </a>
+              <a class="navbar-item"> Contact </a>
+              <a class="navbar-item"> Contact </a>
+           
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> Report an issue </a>
+         
+         
+            </div>
+          </div>
+          <!--has-dropdown-->
+
+          <a href="" class="navbar-item"> item-5 </a>
+        </div>
+        <!--navbar-start ends-->
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button">
+                <strong>Contact Us</strong>
+              </a>
+            </div>
+            <!--button ends-->
+          </div>
+          <!--navbar-item ends-->
+        </div>
+        <!--navbar-end ends-->
+      </div>
+      <!--navbar-menu ends-->
+    </section>
+  </nav>
+  
+
+  <script src="./js/hamburger-toggle.js"></script>
+
+
+
+  <!--
+      <h1>Your irresistibly appealing heading</h1>
+  <img src="url" alt="Your clear-cut image description">
+   <a href="https://www.link-assistant.com/news/perfect-seo-writing.html">
+    <img src="https://cdn1.link-assistant.com/images/news/seo-copywriting/screen-01.png" alt="perfect-seo-writing">
+  </a> 
+  -->
+
+  <!--
+
+    Descriptive labels
+    <a aria-label=“Read More about how awesome Lullabot is” href=“/path/to/your/page”>Read More</a>
+
+    Alerts
+    <div class=“alert-message” role=“alert”>You’ve successfully completed the contact form and you will soon receive a confirmation email.</div>
+
+    Relationships
+    <nav id=“main-nav”>
+      <button id=“menu-button-1” aria-haspopup=“true” aria-controls=“menu-list-1”>Menu List 1</button>
+      <ul id=“menu-list-1” role=“menu” aria-labelledby=“menu-button-1”>
+        <li role=“none”><a role=“menuitem” href=“...”>Link 1</a></li>
+        <li role=“none”><a role=“menuitem” href=“...”>Link 2</a></li>
+        <li role=“none”><a role=“menuitem” href=“...”>Link 3</a></li>
+      </ul>
+    </nav>
+
+    Forms
+    <label for=“first-name”>First Name</label><input type=“text” id=“first-name” aria-required=“true” aria-autocomplete=“on” />
+  
+  
+    How does Drupal use ARIA?
+
+  -->
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/*abstracts*/
+/*Functions allow you to define complex operations on SassScript values that you can re-use throughout 
+your stylesheet. They make it easy to abstract out common formulas and behaviors in a readable way.
+
+Functions are defined using the @function at-rule, which is written:
+ @function <name>(<arguments...>) { ... }. A function’s name can be any Sass identifier. 
+ It can only contain universal statements, as well as the @return at-rule which indicates the 
+ value to use as the result of the function call. Functions are called using the normal CSS 
+ function syntax.
+
+SCSS SYNTAX
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
+
+.sidebar {
+  float: left;
+  margin-left: pow(4, 3) * 1px;
+}*/
+/*
+0 - 320px:      Smaller mobile phones
+320 - 360px:    Medium mobile phones
+360 - 480px:    Biger mobile phones
+480 - 768px:    Tablet portrait
+768 - 1024px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- s-phone
+- m-phone
+- b-phone
+- tab-port
+- tab-land
+- large-desktop
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+/*base*/
+/*
+      -webkit-animation-name: zoomInDown;
+      animation-name: zoomInDown;
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+*/
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px; }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px; }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px; }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px; }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px; } }
+
+@keyframes arrow {
+  0% {
+    top: 40%; }
+  25% {
+    top: 42.5%; }
+  50% {
+    top: 40%; }
+  75% {
+    top: 42.5%; }
+  100% {
+    top: 40%; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes leftToRight {
+  0% {
+    width: 0; }
+  66% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@-webkit-keyframes leftToRight {
+  0% {
+    width: 0; }
+  66% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@-webkit-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif; }
+  html body {
+    box-sizing: border-box; }
+    html body a {
+      text-decoration: none !important; }
+    html body p, html body span {
+      padding-bottom: 1rem; }
+    html body section:not(:first-child) {
+      margin-top: 25rem;
+      margin-bottom: 25rem; }
+    html body .section-title {
+      padding-bottom: 7rem; }
+
+/*“Web typography” refers to the appearance of all the text on your website. It includes basic 
+CSS text properties like what font to use and whether it should be italic or not, but typography 
+is much more than that. It’s about the space between and around letters, words, and lines. It’s 
+the size of different runs of text in relation to one another, and the history behind each font family.
+
+https://www.internetingishard.com/html-and-css/web-typography/
+*/
+/* !!!!___ Use % rather than px for all layout-related lenghts (including pictures) ___!!!! */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IM Fell English', serif;
+  text-transform: uppercase; }
+
+p {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  line-height: 3rem; }
+
+h2 {
+  font-size: 3.4rem;
+  text-shadow: black 0.1rem 0.1rem;
+  overflow: hidden; }
+  @media only screen and (min-width: 64em) {
+    h2 {
+      font-size: 4rem; } }
+
+h3,
+h4,
+h5 {
+  font-size: 2.2rem;
+  text-shadow: black 0.1rem 0.1rem;
+  color: white; }
+
+a {
+  text-decoration: none;
+  font-size: 1.8rem; }
+
+/*Utility classes are meant to do only one thing, and do it well. They are designed to be simple,
+ composable and re-usable, allowing for easy and fast development. While a CSS system based on utility 
+ classes alone is not desirable, having a set of utility classes that allow you to quickly put together 
+ templates is great.
+
+ https://blog.mariano.io/css-utility-classes-how-to-use-them-effectively-d61ee00dad2d
+ 
+Common Use Cases
+*I find utility classes really helpful for:
+*Margin/padding
+*Text (colors, size, styles)
+*Common Background Colors
+*Hiding/Showing stuff
+*Display (block, inline-block)
+
+Naming utility classes
+To separate utility classes from component classes, it’s good to namespace them. I use the .u- namespace.
+You can also shorthand most properties for faster coding. Here are a couple I use:
+*p/m for margin/padding
+*t/r/l/b for top/right/left/bottom
+*v/h for vertical/horizontal
+*bg for background
+*/
+.image-banner {
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  @media only screen and (min-width: 30em) {
+    .image-banner {
+      height: 60vh; } }
+
+/*.sticky {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 1000;
+}*/
+.wd-80 {
+  width: 100%; }
+  @media only screen and (min-width: 48em) {
+    .wd-80 {
+      width: 80%; } }
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: ''; }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+@media only screen and (min-width: 30em) {
+  .flex-reverse-column {
+    flex-direction: column-reverse; } }
+
+.p-intro::first-letter {
+  font-size: 10rem;
+  display: block;
+  float: left;
+  line-height: 0.5;
+  margin: 1.5rem 1.5rem 1rem 0; }
+
+.repsonsive-image {
+  width: 100% !important;
+  height: auto !important; }
+
+.responsive-image-verticale {
+  height: 100% !important;
+  width: auto !important;
+  max-width: 30rem; }
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000ec;
+  opacity: 0.5;
+  z-index: 3; }
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  height: 6rem; }
+  .sticky .navbar {
+    border-top-left-radius: 0rem !important;
+    border-top-right-radius: 0rem !important;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem; }
+
+.active {
+  color: black !important;
+  font-weight: bold;
+  text-decoration: underline #f6f09d; }
+
+.bg-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: 0;
+  background-position: center top;
+  overflow: hidden; }
+
+/*  <div class="bg-wrap">
+        <div class="bg" style="background-image: url('./images/header-bg-main.jpg'); overflow: hidden;"></div>
+      </div>
+  */
+/*
+  .modal-backdrop.show{
+    z-index: 2 !important;
+  }
+  .modal.show .modal-dialog {
+    margin-top: 7rem !important;
+  }
+  */
+/*components*/
+/*layout*/
+/*section*/
