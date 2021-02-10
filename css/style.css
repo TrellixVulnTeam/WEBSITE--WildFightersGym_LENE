@@ -164,9 +164,6 @@ html {
       text-decoration: none !important; }
     html body p, html body span {
       padding-bottom: 1rem; }
-    html body section:not(:first-child) {
-      margin-top: 25rem;
-      margin-bottom: 25rem; }
     html body .section-title {
       padding-bottom: 7rem; }
 
