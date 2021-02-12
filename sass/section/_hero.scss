@@ -1,0 +1,63 @@
+#hero {
+  position: relative;
+  background-color: black !important;
+  //height: 100vh;
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    img {
+      width: 45%;
+      height: auto;
+    }
+  }
+  #hero-carousel {
+    height: 100vh;
+    .carousel-indicators {
+      li {
+        background-color: $primary-red !important;
+      }
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+    .carousel-item{
+      top: 30%;
+    }
+    .carousel-caption {
+      color: #f2f2f2;
+      height: 100%;
+      top: 30%;
+      left: 2%;
+      width: 96%;
+      h5 {
+        font-size: 2.6rem;
+        margin-bottom: 4.5rem;
+        text-shadow: black 0.2rem 0.2rem;
+
+        span{
+            color: $primary-red;
+            //font-weight: bold;
+            text-shadow: yellow 0.2px 0.2px;
+            font-size: 3.5rem;  
+            padding-bottom: 0;
+            border-radius: 0.3rem;
+        }
+      }
+      .hero-btn{
+          background: $primary-red;
+          border-radius: 0.3rem;
+          padding: 0.3rem 0.5rem;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          color: white;
+          font-weight: bold;
+          text-shadow: black 0.2rem 0.2rem;
+          -webkit-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+        -moz-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+        box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+      }
+    }
+  }
+}

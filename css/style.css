@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding-bottom: 1rem;
   line-height: 3rem; }
 
@@ -191,13 +191,6 @@ h2 {
   @media only screen and (min-width: 64em) {
     h2 {
       font-size: 4rem; } }
-
-h3,
-h4,
-h5 {
-  font-size: 2.2rem;
-  text-shadow: black 0.1rem 0.1rem;
-  color: white; }
 
 a {
   text-decoration: none;
@@ -345,3 +338,53 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 /*components*/
 /*layout*/
 /*section*/
+#hero {
+  position: relative;
+  background-color: black !important; }
+  #hero .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+    #hero .logo img {
+      width: 45%;
+      height: auto; }
+  #hero #hero-carousel {
+    height: 100vh; }
+    #hero #hero-carousel .carousel-indicators li {
+      background-color: #c11e1f !important; }
+    #hero #hero-carousel .carousel-inner {
+      height: 100%; }
+    #hero #hero-carousel .carousel-item {
+      top: 30%; }
+    #hero #hero-carousel .carousel-caption {
+      color: #f2f2f2;
+      height: 100%;
+      top: 30%;
+      left: 2%;
+      width: 96%; }
+      #hero #hero-carousel .carousel-caption h5 {
+        font-size: 2.6rem;
+        margin-bottom: 4.5rem;
+        text-shadow: black 0.2rem 0.2rem; }
+        #hero #hero-carousel .carousel-caption h5 span {
+          color: #c11e1f;
+          text-shadow: yellow 0.2px 0.2px;
+          font-size: 3.5rem;
+          padding-bottom: 0;
+          border-radius: 0.3rem; }
+      #hero #hero-carousel .carousel-caption .hero-btn {
+        background: #c11e1f;
+        border-radius: 0.3rem;
+        padding: 0.3rem 0.5rem;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        text-shadow: black 0.2rem 0.2rem;
+        -webkit-box-shadow: 0px 3px 16px -7px #8f8f8f;
+        -moz-box-shadow: 0px 3px 16px -7px #8f8f8f;
+        box-shadow: 0px 3px 16px -7px #8f8f8f; }
+
+.banner-about {
+  overflow-x: hidden; }
