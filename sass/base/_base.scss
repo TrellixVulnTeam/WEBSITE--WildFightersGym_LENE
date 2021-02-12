@@ -21,9 +21,11 @@ html {
     }
     p,span{
       padding-bottom: 1rem;
+      letter-spacing: 0.1rem;
     }
 
     section{
+      border-bottom: solid 0.2rem $primary-red;
       &:not(:first-child){
         //margin-top: 25rem;
         //margin-bottom: 25rem;
@@ -31,7 +33,7 @@ html {
     }
 
     .section-title{
-      padding-bottom: 7rem;
+      height: 10rem;
     }
   }
 }

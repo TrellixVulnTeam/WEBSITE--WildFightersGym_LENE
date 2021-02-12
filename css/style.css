@@ -163,9 +163,12 @@ html {
     html body a {
       text-decoration: none !important; }
     html body p, html body span {
-      padding-bottom: 1rem; }
+      padding-bottom: 1rem;
+      letter-spacing: 0.1rem; }
+    html body section {
+      border-bottom: solid 0.2rem #c11e1f; }
     html body .section-title {
-      padding-bottom: 7rem; }
+      height: 10rem; }
 
 /*“Web typography” refers to the appearance of all the text on your website. It includes basic 
 CSS text properties like what font to use and whether it should be italic or not, but typography 
@@ -385,6 +388,45 @@ You can also shorthand most properties for faster coding. Here are a couple I us
         -webkit-box-shadow: 0px 3px 16px -7px #8f8f8f;
         -moz-box-shadow: 0px 3px 16px -7px #8f8f8f;
         box-shadow: 0px 3px 16px -7px #8f8f8f; }
+
+.banner-introduction--heading {
+  background-color: #c11e1f;
+  color: #f2f2f2;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-shadow: #000 0.2rem 0.2rem; }
+  .banner-introduction--heading p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 2.2rem; }
+  .banner-introduction--heading span {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin: 0 auto; }
+
+.banner-introduction--body {
+  color: #3e4c5a;
+  padding: 5rem 0; }
+  .banner-introduction--body h6 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    padding: 0 0.8rem; }
+
+#testimonials {
+  background-color: #2c2f32;
+  color: #f2f2f2;
+  height: 100vh; }
+  #testimonials #testimonial-carousel .carousel-item {
+    height: 75vh; }
+  #testimonials #testimonial-carousel .carousel-caption {
+    height: 100%;
+    top: 30%; }
+    #testimonials #testimonial-carousel .carousel-caption .customer {
+      color: #c11e1f;
+      text-shadow: #000 0.1rem 0.1rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase; }
 
 .banner-about {
   overflow-x: hidden; }
