@@ -1,3 +1,27 @@
 .banner-about{
-    overflow-x: hidden;
+    .card{
+        background-color: $primary-red;
+        &-title{
+            text-align: center;
+            margin: 1rem 0;
+        }
+    } 
+}
+
+#about{
+    .about-left{
+        background-color: $primary-gray;
+        color: white;
+    }
+    .about-right{
+        color: $font-gray;
+        text-align: center;
+        padding-top: 3rem;
+        & > :not(:last-child) { 
+            border-bottom: rgba(128, 128, 128, 0.233) solid 0.1rem;
+          }     
+        .features{
+            margin: 1rem 0; 
+        }
+    }
 }
