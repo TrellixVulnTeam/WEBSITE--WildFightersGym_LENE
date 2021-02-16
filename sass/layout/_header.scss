@@ -1,14 +1,46 @@
-.banner-about{
-    background-color: $primary-red;
-    color: $white;
-    &--content{
+nav{
+    background-color: $primary-gray ;
+    & > div{
+        justify-content: center !important;
+    }
+    
+    .navbar-toggler{
+        background-color: $font-dark-gray;
+        margin: 1rem 0;
+        &:focus {color: $primary-red;}
+        .menu-hamburger{                  
+            .bar1, .bar2, .bar3 {
+                width: 3.5rem;
+                height: 0.5rem;
+                background-color: $primary-red;
+                margin: 6px 0;
+                transition: 0.4s;
+              }
+              
+              .change .bar1 {
+                -webkit-transform: rotate(-45deg) translate(-0.9rem, 0.6rem);
+                transform: rotate(-45deg) translate(-0.9rem, 0.6rem);
+              }
+              
+              .change .bar2 {opacity: 0;}
+              
+              .change .bar3 {
+                -webkit-transform: rotate(45deg) translate(-0.8rem, -0.8rem);
+                transform: rotate(45deg) translate(-0.8rem, -0.8rem);
+              }
         
+    
+        }
     }
 
-    &--image{
-        width: 100%;
-        height: auto;
+    #top-main-nav{
+        //background-color: $primary-light-gray;
+        .nav-link{
+            text-align: center;
+            padding: 1.3rem 0.5rem;
+            border-top: $border-gray solid 0.1rem;
+        }
     }
+
+   
 }
- 
-  

@@ -1,0 +1,18 @@
+footer{
+    background-color: $primary-gray;
+    .section-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .time{
+            flex: 50%;
+            text-align: center;
+        }
+    }
+    .all-rights{
+        text-align: center;
+        margin-top: 10rem;
+        margin-bottom: 0;
+    }
+}

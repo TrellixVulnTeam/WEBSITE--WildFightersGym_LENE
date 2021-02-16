@@ -57,38 +57,8 @@
 <body>
 
   <header>
-    <!-- <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#testimonials">testimonials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">about us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#classes">classes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#timetable">timetable</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery">gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  -->
+  
+  
     <section id="hero">
       <div class="logo">
         <img src="images/logo.png" alt="bull and tiger inviting to train with them">
@@ -140,6 +110,41 @@
       </div>
 
     </section>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top-main-nav"
+          aria-controls="top-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="menu-hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="top-main-nav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#testimonials">testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#classes">classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#timetable">timetable</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
 
@@ -1042,15 +1047,13 @@
             <div class="header-undirline"></div>
 
           </div>
-          <div class="section-content overflow-hidden">
+          <div class="section-content overflow-hidden flex-column">
             <div class="row">
               <div class="">
                 <a target="_blank" href="https://www.facebook.com/Muaythai-masters-Forest-gate-gym-2273194829628008/"
-                  class="socicon-facebook"></a>
-              </div>
-              <div class="">
-                <a target="_blank" href="https://www.instagram.com/wildfightersgym/?igshid=qtfqumgzfy0k"
-                  class="socicon-instagram"></a>
+                  class="fa fa-facebook"></a>
+                  <a target="_blank" href="https://www.instagram.com/wildfightersgym/?igshid=qtfqumgzfy0k"
+                  class="fa fa-instagram"></a>
               </div>
             </div>
             <div class="row">
@@ -1058,28 +1061,8 @@
                 <img src="images/approved.png" class="approved-img">
               </div>
             </div>
-            <div class="row"></div>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#testimonials">testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">about us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#classes">classes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#timetable">timetable</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallery">gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">contact</a>
-              </li>
-            </ul>
-
+        
+         
           </div>
         </div>
         <!--col ends-->
@@ -1092,7 +1075,7 @@
               <a href="https://www.web-knack.com" title="Website design by Web-Knack">Website design by <spam
                   style="color: #3d59e8">Web-Knack</spam></a>
             </p>
-            </p>
+       
           </div>
         </div>
         <!--col ends-->
@@ -1102,7 +1085,11 @@
     </div>
     <!--container ends-->
   </footer>
-
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
 </body>
 
 </html>

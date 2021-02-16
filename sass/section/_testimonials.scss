@@ -1,6 +1,5 @@
 #testimonials{
     background-color: $primary-gray;
-    color: $white;
     height: 100vh;
     .section-title{
        // background-color: $primary-gray;
@@ -12,12 +11,7 @@
         .carousel-caption{
             height: 100%;
             top: 30%;
-            .customer{
-                color: $primary-red;
-                text-shadow: $black 0.1rem 0.1rem;
-                letter-spacing: 0.2rem;
-                text-transform: uppercase;
-            }
+         
         }
     }
 }
