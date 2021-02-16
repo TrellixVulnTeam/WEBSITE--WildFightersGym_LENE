@@ -18,7 +18,7 @@
         text-align: center;
         padding-top: 3rem;
         & > :not(:last-child) { 
-            border-bottom: rgba(128, 128, 128, 0.233) solid 0.1rem;
+            border-bottom: $border-gray solid 0.1rem;
           }     
         .features{
             margin: 1rem 0; 

@@ -302,11 +302,14 @@ You can also shorthand most properties for faster coding. Here are a couple I us
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem; }
 
+/*
 .active {
+  // background-color: red!important;
   color: black !important;
   font-weight: bold;
-  text-decoration: underline #f6f09d; }
-
+  text-decoration: underline #f6f09d;
+}
+*/
 .bg-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -453,7 +456,7 @@ You can also shorthand most properties for faster coding. Here are a couple I us
   text-align: center;
   padding-top: 3rem; }
   #about .about-right > :not(:last-child) {
-    border-bottom: rgba(128, 128, 128, 0.233) solid 0.1rem; }
+    border-bottom: #8080803b solid 0.1rem; }
   #about .about-right .features {
     margin: 1rem 0; }
 
@@ -473,3 +476,18 @@ You can also shorthand most properties for faster coding. Here are a couple I us
       -webkit-box-shadow: 0px 3px 16px -7px #8f8f8f;
       -moz-box-shadow: 0px 3px 16px -7px #8f8f8f;
       box-shadow: 0px 3px 16px -7px #8f8f8f; }
+
+#timetable {
+  height: 100vh; }
+  #timetable #myTab {
+    margin-top: 5rem; }
+    #timetable #myTab .active {
+      background-color: #f7f7f7; }
+  #timetable .tab-content .row {
+    border-bottom: #8080803b solid 0.1rem; }
+    #timetable .tab-content .row > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f7f7f7; }

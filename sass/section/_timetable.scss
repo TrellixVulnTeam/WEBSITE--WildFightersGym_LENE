@@ -1,0 +1,20 @@
+#timetable{
+    height: 100vh;
+    #myTab{
+        margin-top: 5rem;
+        .active{
+            background-color: $primary-light-gray;
+        }
+    }
+    .tab-content .row{
+        border-bottom: $border-gray solid 0.1rem;
+     & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-light-gray;
+    }
+}
+   
+}
