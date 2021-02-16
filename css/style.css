@@ -512,3 +512,10 @@ You can also shorthand most properties for faster coding. Here are a couple I us
       justify-content: center;
       align-items: center;
       background-color: #f7f7f7; }
+
+#gallery .section-content .row > div {
+  padding: 0; }
+
+#gallery .section-content img {
+  width: 100%;
+  height: auto; }

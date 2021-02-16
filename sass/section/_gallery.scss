@@ -1,0 +1,11 @@
+#gallery{
+    .section-content{
+        .row > div{
+            padding: 0;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
