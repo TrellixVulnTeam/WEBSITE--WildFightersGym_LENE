@@ -48,7 +48,7 @@ a {
 }
 .section-header-white-bg{
   color: $black;
-  text-shadow: $white 0.1rem 0.1rem;
+  text-shadow: $white 0.2rem 0.2rem;
 }
 //SECTION SUB-HEADING
 .sub-heading{
@@ -60,6 +60,69 @@ a {
 }
 
 //BANNERS
+
+.banner-introduction{
+  &--heading{
+    color: $white;
+    font-size: 2.5rem;
+    text-shadow: $black 0.2rem 0.2rem;
+    p{
+      font-size: 3rem;
+    }
+  }
+  &--body{
+    text-align: center;
+
+    h6{
+      font-size: 1.8rem;
+      color: $font-dark-gray;
+      letter-spacing: 0.1rem;
+      b{
+        color: $black;
+      }
+
+    }
+  }
+}
+
+.contact-banner{
+  color: $white;
+  h6{
+    font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      text-shadow: $black 0.1rem 0.1rem;
+
+      
+  }
+  &--header{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  &--button{
+    a{
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      padding: 0.8rem 2rem;
+      text-transform: uppercase;
+      text-shadow: $black 0.1rem 0.1rem;
+                -webkit-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+        -moz-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+        box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+      border: $border-gray solid 0.1rem;
+    }  
+  }
+
+ &--info{
+   i{
+     font-size: 3rem;
+     color: #198754;
+     text-shadow: $black 0.1rem 0.1rem;
+   }
+
+ } 
+}
 
 
 
