@@ -190,6 +190,10 @@ p {
 li {
   font-size: 1.7rem; }
 
+a {
+  text-decoration: none;
+  font-size: 1.8rem; }
+
 #top-main-nav .nav-link {
   color: white;
   text-transform: uppercase;
@@ -201,24 +205,15 @@ li {
   text-align: center;
   text-shadow: #000 0.1rem 0.1rem; }
 
-.section-title:nth-last-child(4) {
-  color: red; }
-
-.section-title:nth-last-of-type(4) {
-  color: red; }
-
-.section-title::nth-of-type(4) {
-  color: red; }
+.section-title .section-header-white-bg {
+  color: #000;
+  text-shadow: #f2f2f2 0.1rem 0.1rem; }
 
 .section-title .sub-heading {
   font-size: 1.5rem;
   width: 80%;
   letter-spacing: 0;
   text-align: center; }
-
-a {
-  text-decoration: none;
-  font-size: 1.8rem; }
 
 .image-banner {
   height: 40vh;

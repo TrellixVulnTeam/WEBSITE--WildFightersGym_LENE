@@ -22,6 +22,13 @@ li{
   font-size: 1.7rem;
 }
 
+//HIPERLINKS
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+
 //NAV
 #top-main-nav{
   .nav-link{
@@ -38,37 +45,21 @@ li{
   font-size: 3rem;
   text-align: center;
   text-shadow: $black 0.1rem 0.1rem;
-
 }
-&:nth-child(1){
-    
+.section-header-white-bg{
+  color: $black;
+  text-shadow: $white 0.1rem 0.1rem;
 }
-&:nth-last-child(4){
-  color: red;
-}
-&:nth-last-of-type(4){
-  color: red;
-}
-&::nth-of-type(4){
-  color: red;
-}
-
+//SECTION SUB-HEADING
 .sub-heading{
   font-size: 1.5rem;
   width: 80%;
   letter-spacing: 0;
   text-align: center;
-
+}
 }
 
-}
+//BANNERS
 
 
-//SECTION SUB-HEADER
 
-
-//HIPERLINKS
-a {
-    text-decoration: none;
-    font-size: 1.8rem;
-  }
