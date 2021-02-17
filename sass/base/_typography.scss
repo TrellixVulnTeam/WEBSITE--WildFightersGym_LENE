@@ -23,23 +23,40 @@ li{
 }
 
 //SECTION HEADER
-h2 {
-    font-size: 3.4rem;
-    text-shadow: black 0.1rem 0.1rem;
-    overflow: hidden; 
-    @include respond(tab-land) {
-      font-size: 4rem;
-    }
-  }
+.section-title{
+.section-header{
+  color: $white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: $black 0.1rem 0.1rem;
+
+}
+&:nth-child(1){
+    
+}
+&:nth-last-child(4){
+  color: red;
+}
+&:nth-last-of-type(4){
+  color: red;
+}
+&::nth-of-type(4){
+  color: red;
+}
+
+.sub-heading{
+  font-size: 1.5rem;
+  width: 80%;
+  letter-spacing: 0;
+  text-align: center;
+
+}
+
+}
+
 
 //SECTION SUB-HEADER
-h3,
-h4,
-h5 {
- // font-size: 2.2rem;
- // text-shadow: black 0.1rem 0.1rem;
-  //color: white;
-}
+
 
 //HIPERLINKS
 a {
