@@ -352,23 +352,16 @@ nav {
     justify-content: center !important; }
   nav .navbar-toggler {
     background-color: #3e4c5a;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    border-color: #c11e1f !important; }
     nav .navbar-toggler:focus {
       color: #c11e1f; }
     nav .navbar-toggler .menu-hamburger .bar1, nav .navbar-toggler .menu-hamburger .bar2, nav .navbar-toggler .menu-hamburger .bar3 {
-      width: 3.5rem;
-      height: 0.5rem;
+      width: 2.8rem;
+      height: 0.4rem;
       background-color: #c11e1f;
       margin: 6px 0;
       transition: 0.4s; }
-    nav .navbar-toggler .menu-hamburger .change .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-0.9rem, 0.6rem);
-      transform: rotate(-45deg) translate(-0.9rem, 0.6rem); }
-    nav .navbar-toggler .menu-hamburger .change .bar2 {
-      opacity: 0; }
-    nav .navbar-toggler .menu-hamburger .change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-0.8rem, -0.8rem);
-      transform: rotate(45deg) translate(-0.8rem, -0.8rem); }
   nav #top-main-nav .nav-link {
     text-align: center;
     padding: 1.3rem 0.5rem;
