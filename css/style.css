@@ -257,6 +257,12 @@ a {
     color: #198754;
     text-shadow: #000 0.1rem 0.1rem; }
 
+#testimonials .customer {
+  color: #c11e1f;
+  text-shadow: #000 0.1rem 0.1rem;
+  font-weight: bold;
+  font-size: 2rem; }
+
 .image-banner {
   height: 40vh;
   background-attachment: fixed;
@@ -450,7 +456,7 @@ footer {
     height: 75vh; }
   #testimonials #testimonial-carousel .carousel-caption {
     height: 100%;
-    top: 30%; }
+    top: 10%; }
 
 .banner-about {
   background-color: #c11e1f; }

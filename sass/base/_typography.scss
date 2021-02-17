@@ -124,5 +124,15 @@ a {
  } 
 }
 
+//TESTIMONIALS
+#testimonials{
+  .customer{
+    color: $primary-red;
+    text-shadow: $black 0.1rem 0.1rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
 
 
