@@ -452,11 +452,13 @@ footer {
 #testimonials {
   background-color: #2c2f32;
   height: 100vh; }
+  #testimonials #testimonial-carousel .carousel-indicators {
+    bottom: -5%; }
   #testimonials #testimonial-carousel .carousel-item {
-    height: 75vh; }
+    height: 65vh; }
   #testimonials #testimonial-carousel .carousel-caption {
     height: 100%;
-    top: 10%; }
+    top: 5%; }
 
 .banner-about {
   background-color: #c11e1f; }

@@ -5,12 +5,15 @@
        // background-color: $primary-gray;
     }
     #testimonial-carousel{
+        .carousel-indicators{
+            bottom: -5%;
+        }
         .carousel-item{
-            height: 75vh;
+            height: 65vh;
         }
         .carousel-caption{
             height: 100%;
-            top: 10%;
+            top: 5%;
          
         }
     }
