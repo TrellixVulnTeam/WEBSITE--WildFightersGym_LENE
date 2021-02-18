@@ -304,12 +304,12 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   transform: translateZ(0);
   will-change: transform;
   z-index: 0;
-  background-position: center top;
+  background-position: center center;
   overflow: hidden; }
 
 /*  <div class="bg-wrap">
@@ -429,6 +429,36 @@ footer {
     .banner-introduction--body h6:last-child {
       margin-bottom: 0; }
 
+.banner-about .row {
+  padding-top: 5rem !important; }
+
+.banner-about .accordion-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 7rem;
+  background-color: #c11e1f !important;
+  width: 100%; }
+  .banner-about .accordion-button::after {
+    background-color: #198754;
+    margin-left: 1rem !important; }
+  .banner-about .accordion-button:active, .banner-about .accordion-button:focus {
+    border-color: #c11e1f !important; }
+
+.banner-about .card {
+  background-color: #c11e1f;
+  color: #f2f2f2;
+  z-index: 1;
+  margin-bottom: 5rem;
+  -webkit-box-shadow: 0px 3px 16px -7px #8f8f8f;
+  -moz-box-shadow: 0px 3px 16px -7px #8f8f8f;
+  box-shadow: 0px 3px 16px -7px #8f8f8f; }
+  .banner-about .card-title {
+    margin: 1rem 0; }
+  .banner-about .card-body {
+    padding: 0 !important; }
+
 .contact-banner {
   background-color: #c11e1f;
   padding: 5rem 1rem; }
@@ -459,16 +489,6 @@ footer {
   #testimonials #testimonial-carousel .carousel-caption {
     height: 100%;
     top: 5%; }
-
-.banner-about {
-  background-color: #c11e1f; }
-  .banner-about--image {
-    width: 100%;
-    height: auto; }
-  .banner-about .card {
-    background-color: #c11e1f; }
-    .banner-about .card-title {
-      margin: 1rem 0; }
 
 #about .about-left {
   background-color: #2c2f32; }

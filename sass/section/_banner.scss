@@ -1,54 +1,92 @@
-.banner-introduction{
-    //background-color: $primary-red;
-    &--heading{
-        background-color: $primary-red;
-        padding: 1rem 2rem;
-        text-transform: uppercase;
-        p{
-            padding-bottom: 0;
-            margin-bottom: 0; 
-        }
-        span{
-            margin: 0 auto;
-        }
+.banner-introduction {
+  //background-color: $primary-red;
+  &--heading {
+    background-color: $primary-red;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    p {
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
-    &--body{
-        padding: 5rem 0;   
-        h6{
-            margin-bottom: 2.5rem;
-            padding: 0 0.8rem;
-            &:last-child{
-                margin-bottom: 0;
-            }
-        }
+    span {
+      margin: 0 auto;
     }
+  }
+  &--body {
+    padding: 5rem 0;
+    h6 {
+      margin-bottom: 2.5rem;
+      padding: 0 0.8rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
-.contact-banner{
-    background-color: $primary-red;
-    padding: 5rem 1rem;
-    &--header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem 1rem;
+.banner-about {  
+    .row{
+        padding-top: 5rem !important;
     }
-    &--button{
-        text-align: center;
-        border-radius: 0.3rem;
-        margin-top: 1.5rem;
-    }
-    &--info{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-       
-        a{
-            margin-right: 1.5rem;
+        .accordion-button{
+            display: flex;
+            justify-content: center;     
+            width: 100%;
+            margin: 0 auto;
+            min-height: 7rem;
+            background-color: $primary-red !important;
+            width: 100%;
+            &::after {
+                background-color: #198754; 
+                margin-left: 1rem !important;
+            }
+            &:active, &:focus{
+                border-color: $primary-red !important;
+            }
         }
-    }
-   
 
-    
+
+  .card {
+    background-color: $primary-red;
+    color: $white;
+    z-index: 1;
+    margin-bottom: 5rem;
+    -webkit-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+        -moz-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+        box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+   
+    &-title {
+      margin: 1rem 0;
+    }
+    &-body{
+        padding: 0 !important;
+        
+    }
+  }
+}
+
+.contact-banner {
+  background-color: $primary-red;
+  padding: 5rem 1rem;
+  &--header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+  &--button {
+    text-align: center;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
+  }
+  &--info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      margin-right: 1.5rem;
+    }
+  }
 }
