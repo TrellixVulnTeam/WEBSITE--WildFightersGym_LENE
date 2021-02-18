@@ -289,6 +289,19 @@ a {
       font-size: 2rem;
       padding-bottom: 1rem; }
 
+#classes .section-content {
+  font-size: 1.8rem; }
+  #classes .section-content--title h3 {
+    font-size: 2.2rem;
+    text-shadow: #000 0.1rem 0.1rem; }
+  #classes .section-content button {
+    font-size: 1.6rem; }
+  #classes .section-content .modal-content {
+    background-color: #c11e1f;
+    text-align: left; }
+  #classes .section-content .modal-title {
+    font-size: 2rem; }
+
 .image-banner {
   height: 40vh;
   background-attachment: fixed;
@@ -537,9 +550,11 @@ footer {
 
 #classes {
   background-color: #2c2f32;
-  color: #f2f2f2; }
+  color: #f2f2f2;
+  padding: 3rem 0; }
   #classes .section-content {
-    text-align: center; }
+    text-align: center;
+    padding-top: 5rem; }
     #classes .section-content .row > div {
       margin-bottom: 10rem; }
     #classes .section-content--title {
