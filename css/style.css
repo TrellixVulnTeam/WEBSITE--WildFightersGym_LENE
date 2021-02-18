@@ -263,6 +263,14 @@ a {
   font-weight: bold;
   font-size: 2rem; }
 
+.banner-about .accordion-button {
+  color: #f2f2f2 !important;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-shadow: #000 0.1rem 0.1rem;
+  text-transform: uppercase; }
+
 .image-banner {
   height: 40vh;
   background-attachment: fixed;
@@ -429,35 +437,35 @@ footer {
     .banner-introduction--body h6:last-child {
       margin-bottom: 0; }
 
-.banner-about .row {
-  padding-top: 5rem !important; }
-
-.banner-about .accordion-button {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  min-height: 7rem;
-  background-color: #c11e1f !important;
-  width: 100%; }
-  .banner-about .accordion-button::after {
-    background-color: #198754;
-    margin-left: 1rem !important; }
-  .banner-about .accordion-button:active, .banner-about .accordion-button:focus {
-    border-color: #c11e1f !important; }
-
-.banner-about .card {
-  background-color: #c11e1f;
-  color: #f2f2f2;
-  z-index: 1;
-  margin-bottom: 5rem;
-  -webkit-box-shadow: 0px 3px 16px -7px #8f8f8f;
-  -moz-box-shadow: 0px 3px 16px -7px #8f8f8f;
-  box-shadow: 0px 3px 16px -7px #8f8f8f; }
-  .banner-about .card-title {
-    margin: 1rem 0; }
-  .banner-about .card-body {
-    padding: 0 !important; }
+.banner-about {
+  background-color: #c11e1f; }
+  .banner-about .row {
+    padding-top: 5rem !important; }
+  .banner-about .accordion-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 7rem;
+    background-color: #c11e1f !important;
+    width: 100%; }
+    .banner-about .accordion-button::after {
+      background-color: #198754;
+      margin-left: 1rem !important; }
+    .banner-about .accordion-button:active, .banner-about .accordion-button:focus {
+      border-color: #c11e1f !important; }
+  .banner-about .card {
+    background-color: #c11e1f;
+    color: #f2f2f2;
+    z-index: 1;
+    margin-bottom: 5rem;
+    -webkit-box-shadow: 0px 3px 16px -7px #8f8f8f;
+    -moz-box-shadow: 0px 3px 16px -7px #8f8f8f;
+    box-shadow: 0px 3px 16px -7px #8f8f8f; }
+    .banner-about .card-title {
+      margin: 1rem 0; }
+    .banner-about .card-body {
+      padding: 0 !important; }
 
 .contact-banner {
   background-color: #c11e1f;
