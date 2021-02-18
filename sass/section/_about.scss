@@ -1,6 +1,9 @@
 
 
 #about{
+    .section-content{
+        padding: 1rem;
+      }
     .about-left{
         background-color: $primary-gray;
     }
@@ -13,6 +16,11 @@
           }     
         .features{
             margin: 1rem 0; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
         }
     }
 }

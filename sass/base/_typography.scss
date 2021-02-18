@@ -144,8 +144,32 @@ a {
     text-shadow: $black 0.1rem 0.1rem;
     text-transform: uppercase;
     }
- 
+}
 
+#about{
+  color: $white;
+  blockquote{
+    font-size: 1.8rem;
+    font-style: italic;
+    padding: 3rem 0;
+  }
+  .about-right{
+    padding: 3rem 0;
+  }
+  i{
+    color: $primary-red;
+    font-size: 7rem;
+  }
+
+  .features{
+    text-align: center;
+    h4{
+      font-weight: bold;
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+  }
+ 
 }
 
 

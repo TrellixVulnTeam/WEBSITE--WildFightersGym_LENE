@@ -271,6 +271,24 @@ a {
   text-shadow: #000 0.1rem 0.1rem;
   text-transform: uppercase; }
 
+#about {
+  color: #f2f2f2; }
+  #about blockquote {
+    font-size: 1.8rem;
+    font-style: italic;
+    padding: 3rem 0; }
+  #about .about-right {
+    padding: 3rem 0; }
+  #about i {
+    color: #c11e1f;
+    font-size: 7rem; }
+  #about .features {
+    text-align: center; }
+    #about .features h4 {
+      font-weight: bold;
+      font-size: 2rem;
+      padding-bottom: 1rem; }
+
 .image-banner {
   height: 40vh;
   background-attachment: fixed;
@@ -498,6 +516,9 @@ footer {
     height: 100%;
     top: 5%; }
 
+#about .section-content {
+  padding: 1rem; }
+
 #about .about-left {
   background-color: #2c2f32; }
 
@@ -507,7 +528,12 @@ footer {
   #about .about-right > :not(:last-child) {
     border-bottom: #8080803b solid 0.1rem; }
   #about .about-right .features {
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; }
 
 #classes {
   background-color: #2c2f32;
