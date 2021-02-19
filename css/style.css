@@ -532,7 +532,7 @@ footer {
     background-color: #c11e1f !important;
     width: 100%; }
     .banner-about .accordion-button::after {
-      background-color: #198754;
+      background-color: #0d6efd;
       margin-left: 1rem !important; }
     .banner-about .accordion-button:active, .banner-about .accordion-button:focus {
       border-color: #c11e1f !important; }
@@ -548,6 +548,8 @@ footer {
       margin: 1rem 0; }
     .banner-about .card-body {
       padding: 0 !important; }
+      .banner-about .card-body li {
+        list-style: circle; }
 
 .contact-banner {
   background-color: #c11e1f;
@@ -579,6 +581,9 @@ footer {
   #testimonials #testimonial-carousel .carousel-caption {
     height: 100%;
     top: 5%; }
+    @media only screen and (min-width: 22.5em) {
+      #testimonials #testimonial-carousel .carousel-caption {
+        top: 20%; } }
 
 #about .section-content {
   padding: 1rem; }

@@ -38,7 +38,7 @@
             background-color: $primary-red !important;
             width: 100%;
             &::after {
-                background-color: #198754; 
+                background-color: #0d6efd; 
                 margin-left: 1rem !important;
             }
             &:active, &:focus{
@@ -61,6 +61,9 @@
     }
     &-body{
         padding: 0 !important;
+        li{
+          list-style: circle;
+        }
         
     }
   }
