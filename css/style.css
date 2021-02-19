@@ -222,14 +222,10 @@ a {
   .banner-introduction--heading p {
     font-size: 3rem; }
 
-.banner-introduction--body {
-  text-align: center; }
-  .banner-introduction--body h6 {
-    font-size: 1.8rem;
-    color: #3e4c5a;
-    letter-spacing: 0.1rem; }
-    .banner-introduction--body h6 b {
-      color: #000; }
+.banner-introduction--body h6 {
+  font-size: 1.8rem;
+  color: #3e4c5a;
+  letter-spacing: 0.1rem; }
 
 .contact-banner {
   color: #f2f2f2; }
