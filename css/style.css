@@ -608,7 +608,7 @@ footer {
 #gallery .section-content .row > div {
   padding: 0; }
 
-#gallery .section-content .bg-image {
+#gallery .section-content .gallery-bg-image {
   height: 237px;
   /* You must set a specified height */
   background-position: center;
