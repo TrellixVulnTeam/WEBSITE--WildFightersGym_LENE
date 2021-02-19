@@ -3,9 +3,11 @@
         .row > div{
             padding: 0;
         }
-        img{
-            width: 100%;
-            height: auto;
+        .bg-image{          
+            height: 237px; /* You must set a specified height */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: auto; /* Resize the background image to cover the entire container */
         }
     }
 }
