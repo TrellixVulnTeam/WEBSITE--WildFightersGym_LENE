@@ -457,11 +457,12 @@ footer {
   background-color: black !important; }
   #hero .logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1; }
+    top: 2%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -2%); }
     #hero .logo img {
-      width: 45%;
+      width: 100%;
       height: auto; }
   #hero #hero-carousel {
     height: 100vh; }
