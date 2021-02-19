@@ -196,3 +196,27 @@ a {
   } 
 }
 
+#timetable{
+    .nav-link{
+      text-transform: uppercase;
+      color: $black;
+    }
+    #myTabContent{
+      font-size: 1.8rem;
+      .time{
+        color: $primary-red;
+      }
+      .lesson-title{
+        font-weight: bold;
+        color: $font-dark-gray;
+      }
+      .age-group{
+        font-style: italic;
+        color: $black;
+      }
+      .btn{
+        font-size: 1.8rem;
+      }
+      }
+}
+

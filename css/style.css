@@ -302,6 +302,23 @@ a {
   #classes .section-content .modal-title {
     font-size: 2rem; }
 
+#timetable .nav-link {
+  text-transform: uppercase;
+  color: #000; }
+
+#timetable #myTabContent {
+  font-size: 1.8rem; }
+  #timetable #myTabContent .time {
+    color: #c11e1f; }
+  #timetable #myTabContent .lesson-title {
+    font-weight: bold;
+    color: #3e4c5a; }
+  #timetable #myTabContent .age-group {
+    font-style: italic;
+    color: #000; }
+  #timetable #myTabContent .btn {
+    font-size: 1.8rem; }
+
 .image-banner {
   height: 40vh;
   background-attachment: fixed;
@@ -567,19 +584,26 @@ footer {
       -moz-box-shadow: 0px 3px 16px -7px #8f8f8f;
       box-shadow: 0px 3px 16px -7px #8f8f8f; }
 
-#timetable #myTab {
-  margin-top: 5rem; }
-  #timetable #myTab .active {
+#timetable {
+  padding: 5rem 0; }
+  #timetable #myTab {
+    margin-top: 5rem; }
+    #timetable #myTab .active {
+      background-color: #f7f7f7;
+      background-color: #c11e1f;
+      color: #f2f2f2; }
+  #timetable .tab-content .row {
+    border-bottom: #8080803b solid 0.1rem;
+    padding: 3rem 0;
     background-color: #f7f7f7; }
-
-#timetable .tab-content .row {
-  border-bottom: #8080803b solid 0.1rem; }
-  #timetable .tab-content .row > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f7f7f7; }
+    #timetable .tab-content .row > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f7f7f7; }
+    #timetable .tab-content .row .btn {
+      margin-bottom: 2rem; }
 
 #gallery .section-content .row > div {
   padding: 0; }

@@ -1,20 +1,29 @@
 #timetable{
    // height: 100vh;
+   padding: 5rem 0;
     #myTab{
         margin-top: 5rem;
         .active{
             background-color: $primary-light-gray;
+            background-color: $primary-red;
+            color: $white;
         }
     }
     .tab-content .row{
         border-bottom: $border-gray solid 0.1rem;
+        padding: 3rem 0;
+        background-color: $primary-light-gray;
+
      & > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: $primary-light-gray;
+        
     }
-}
-   
+    .btn{
+        margin-bottom: 2rem;
+      }
+}  
 }
