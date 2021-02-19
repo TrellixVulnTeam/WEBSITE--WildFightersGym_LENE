@@ -1,14 +1,37 @@
 footer{
     background-color: $primary-gray;
+    color: $white;
+    .footer-title{
+        padding: 9rem 0 2rem 0;
+    }
     .section-content{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        
         .time{
             flex: 50%;
             text-align: center;
         }
+        .social-icons{
+            margin-top: 5rem;
+            .fa-facebook{
+                padding: 0 2rem 0 1rem;
+            }
+            .fa-instagram{
+                padding: 0 1rem 0 2rem;
+            }  
+        }
+        .footer-image{   
+            margin-top: 2rem;       
+            height: 100px; 
+            width: 100px;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: contain; 
+        }
+        
     }
     .all-rights{
         text-align: center;

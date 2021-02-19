@@ -319,6 +319,27 @@ a {
   #timetable #myTabContent .btn {
     font-size: 1.8rem; }
 
+footer .footer-title h2 {
+  font-size: 3rem;
+  text-align: center; }
+
+footer .social-icons {
+  font-size: 5rem; }
+  footer .social-icons .fa-facebook {
+    color: blue; }
+  footer .social-icons .fa-instagram {
+    color: pink; }
+
+footer i {
+  color: #c11e1f;
+  font-size: 4rem; }
+
+footer .day {
+  text-transform: uppercase; }
+
+footer span {
+  color: #b1b3b6; }
+
 .image-banner {
   height: 40vh;
   background-attachment: fixed;
@@ -329,7 +350,7 @@ a {
     .image-banner {
       height: 60vh; } }
 
-.section-title {
+.section-title, .footer-title {
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -404,7 +425,10 @@ nav {
     border-top: #8080803b solid 0.1rem; }
 
 footer {
-  background-color: #2c2f32; }
+  background-color: #2c2f32;
+  color: #f2f2f2; }
+  footer .footer-title {
+    padding: 9rem 0 2rem 0; }
   footer .section-content {
     display: flex;
     flex-wrap: wrap;
@@ -413,6 +437,19 @@ footer {
     footer .section-content .time {
       flex: 50%;
       text-align: center; }
+    footer .section-content .social-icons {
+      margin-top: 5rem; }
+      footer .section-content .social-icons .fa-facebook {
+        padding: 0 2rem 0 1rem; }
+      footer .section-content .social-icons .fa-instagram {
+        padding: 0 1rem 0 2rem; }
+    footer .section-content .footer-image {
+      margin-top: 2rem;
+      height: 100px;
+      width: 100px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
   footer .all-rights {
     text-align: center;
     margin-top: 10rem;
@@ -614,10 +651,6 @@ footer {
 
 #gallery .section-content .gallery-bg-image {
   height: 237px;
-  /* You must set a specified height */
   background-position: center;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: auto;
-  /* Resize the background image to cover the entire container */ }
+  background-size: auto; }
