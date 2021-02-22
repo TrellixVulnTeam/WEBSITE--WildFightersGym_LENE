@@ -8,14 +8,21 @@
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -2%);
- 
+    @include respond(tab-land) {
+      left: 15%;
+      top: 5%;
+    }
     img {
       width: 100%;
       height: auto;
+     
     }
   }
   #hero-carousel {
     height: 100vh;
+    @include respond(tab-land) {
+      height: auto;
+    }
     .carousel-indicators {
       li {
         background-color: $primary-red !important;
@@ -24,9 +31,11 @@
     .carousel-inner {
       height: 100%;
     }
-    .carousel-item{
+    .carousel-item {
       top: 30%;
-    
+      @include respond(tab-land) {
+        top: 0;
+      }
     }
     .carousel-caption {
       color: white;
@@ -40,46 +49,66 @@
         top: 90%;
         transform: translate(-50%, -30%);
       }
- 
+      @include respond(tab-land) {
+        top: 55%;
+        left: 50%;
+        width: 64%;
+        // transform: translate(-50%, -50%);
+        p {
+          font-size: 2.5rem;
+          text-shadow: $black 0.2rem 0.2rem;
+        }
+      }
       h5 {
         font-size: 2.6rem;
         margin-bottom: 4.5rem;
         text-shadow: black 0.2rem 0.2rem;
         @include respond(tab-port) {
           font-size: 4.6rem;
-         }
-     
+        }
+        @include respond(tab-land) {
+          font-size: 5rem;
+          font-weight: bold;
+          text-shadow: black 0.3rem 0.3rem;
+        }
 
-        span{
-            color: $primary-red;
-            //font-weight: bold;
-            text-shadow: yellow 0.2px 0.2px;
-            font-size: 3.5rem;  
-            padding-bottom: 0;
-            border-radius: 0.3rem;
-            @include respond(tab-port) {
-              font-size: 5.4rem;
-             }
-        
+        span {
+          color: $primary-red;
+          //font-weight: bold;
+          text-shadow: yellow 0.1rem 0.1rem;
+          font-size: 3.5rem;
+          padding-bottom: 0;
+          border-radius: 0.3rem;
+          @include respond(tab-port) {
+            font-size: 5.4rem;
+          }
+          @include respond(tab-land) {
+            font-size: 5.9rem;
+          }
         }
       }
-      .hero-btn{
-          background: $primary-red;
-          border-radius: 0.3rem;
-          padding: 0.3rem 0.5rem;
-          font-size: 1.8rem;
-          text-transform: uppercase;
-          color: white;
-          font-weight: bold;
-          text-shadow: black 0.2rem 0.2rem;
-          -webkit-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
-        -moz-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
-        box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
+      .hero-btn {
+        background: $primary-red;
+        border-radius: 0.3rem;
+        padding: 0.3rem 0.5rem;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        text-shadow: black 0.2rem 0.2rem;
+        -webkit-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+        -moz-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+        box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
         @include respond(tab-port) {
           margin-top: 3rem;
           font-size: 2.5rem;
         }
-     
+        @include respond(tab-land) {
+          padding: 0.6rem 1rem;
+          &:hover {
+            background-color: lighten($color: $primary-red, $amount: 5);
+          }
+        }
       }
     }
   }

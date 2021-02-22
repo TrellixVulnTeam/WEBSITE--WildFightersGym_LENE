@@ -1,9 +1,10 @@
 #gallery{
     .section-content{
-        padding-bottom: 5rem;
+        //padding: 5rem 0;
         @include respond(tab-port) {
             display: flex;
             flex-wrap: wrap;
+            //background-color: $black;
         }
         .row > div{
             padding: 0;

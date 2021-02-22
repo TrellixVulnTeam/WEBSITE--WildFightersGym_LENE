@@ -66,7 +66,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     -webkit-filter: brightness(110%);
     -moz-filter: brightness(110%);
     -ms-filter: brightness(110%);
-    filter: brightness(110%);    
+    filter: brightness(110%);   
+    transition: 0.5s; 
 }
 
 

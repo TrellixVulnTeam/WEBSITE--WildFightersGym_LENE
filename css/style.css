@@ -167,14 +167,17 @@ html {
       letter-spacing: 0.1rem; }
     html body section {
       border-bottom: solid 0.2rem #c11e1f; }
+    html body #testimonials, html body #about, html body #classes, html body #timetable,
+    html body #gallery, html body footer {
+      border-top: #c11e1f solid 0.1rem; }
     html body .section-title {
       height: 10rem; }
       @media only screen and (min-width: 48em) {
         html body .section-title {
           height: 25rem; } }
-  html #testimonials, html #about, html #classes, html #timetable,
-  html #gallery, html footer {
-    border-top: #c11e1f solid 0.1rem; }
+      @media only screen and (min-width: 64em) {
+        html body .section-title {
+          height: 20rem; } }
 
 /*“Web typography” refers to the appearance of all the text on your website. It includes basic 
 CSS text properties like what font to use and whether it should be italic or not, but typography 
@@ -478,17 +481,27 @@ footer {
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -2%); }
+    @media only screen and (min-width: 64em) {
+      #hero .logo {
+        left: 15%;
+        top: 5%; } }
     #hero .logo img {
       width: 100%;
       height: auto; }
   #hero #hero-carousel {
     height: 100vh; }
+    @media only screen and (min-width: 64em) {
+      #hero #hero-carousel {
+        height: auto; } }
     #hero #hero-carousel .carousel-indicators li {
       background-color: #c11e1f !important; }
     #hero #hero-carousel .carousel-inner {
       height: 100%; }
     #hero #hero-carousel .carousel-item {
       top: 30%; }
+      @media only screen and (min-width: 64em) {
+        #hero #hero-carousel .carousel-item {
+          top: 0; } }
     #hero #hero-carousel .carousel-caption {
       color: white;
       height: 100%;
@@ -501,6 +514,14 @@ footer {
           left: 50%;
           top: 90%;
           transform: translate(-50%, -30%); } }
+      @media only screen and (min-width: 64em) {
+        #hero #hero-carousel .carousel-caption {
+          top: 55%;
+          left: 50%;
+          width: 64%; }
+          #hero #hero-carousel .carousel-caption p {
+            font-size: 2.5rem;
+            text-shadow: #000 0.2rem 0.2rem; } }
       #hero #hero-carousel .carousel-caption h5 {
         font-size: 2.6rem;
         margin-bottom: 4.5rem;
@@ -508,15 +529,23 @@ footer {
         @media only screen and (min-width: 48em) {
           #hero #hero-carousel .carousel-caption h5 {
             font-size: 4.6rem; } }
+        @media only screen and (min-width: 64em) {
+          #hero #hero-carousel .carousel-caption h5 {
+            font-size: 5rem;
+            font-weight: bold;
+            text-shadow: black 0.3rem 0.3rem; } }
         #hero #hero-carousel .carousel-caption h5 span {
           color: #c11e1f;
-          text-shadow: yellow 0.2px 0.2px;
+          text-shadow: yellow 0.1rem 0.1rem;
           font-size: 3.5rem;
           padding-bottom: 0;
           border-radius: 0.3rem; }
           @media only screen and (min-width: 48em) {
             #hero #hero-carousel .carousel-caption h5 span {
               font-size: 5.4rem; } }
+          @media only screen and (min-width: 64em) {
+            #hero #hero-carousel .carousel-caption h5 span {
+              font-size: 5.9rem; } }
       #hero #hero-carousel .carousel-caption .hero-btn {
         background: #c11e1f;
         border-radius: 0.3rem;
@@ -533,11 +562,25 @@ footer {
           #hero #hero-carousel .carousel-caption .hero-btn {
             margin-top: 3rem;
             font-size: 2.5rem; } }
+        @media only screen and (min-width: 64em) {
+          #hero #hero-carousel .carousel-caption .hero-btn {
+            padding: 0.6rem 1rem; }
+            #hero #hero-carousel .carousel-caption .hero-btn:hover {
+              background-color: #d72123; } }
+
+@media only screen and (min-width: 64em) {
+  .banner-introduction .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row !important; } }
 
 .banner-introduction--heading {
   background-color: #c11e1f;
   padding: 3rem 2rem;
   text-transform: uppercase; }
+  @media only screen and (min-width: 64em) {
+    .banner-introduction--heading {
+      min-height: 25rem; } }
   .banner-introduction--heading p {
     padding-bottom: 0;
     margin-bottom: 0; }
@@ -545,6 +588,9 @@ footer {
       .banner-introduction--heading p {
         margin: 0 auto;
         margin-left: 23rem; } }
+    @media only screen and (min-width: 64em) {
+      .banner-introduction--heading p {
+        margin-left: 0; } }
   .banner-introduction--heading span {
     margin: 0 auto;
     padding-bottom: 0; }
@@ -556,6 +602,11 @@ footer {
       display: flex;
       justify-content: center;
       padding: 5rem !important; } }
+  @media only screen and (min-width: 64em) {
+    .banner-introduction--body {
+      padding: 0 !important;
+      padding-top: 3rem !important;
+      justify-content: space-around; } }
   .banner-introduction--body h6 {
     margin-bottom: 2.5rem;
     padding: 0 0.8rem; }
@@ -730,16 +781,16 @@ footer {
     #timetable .tab-content .row .btn {
       margin-bottom: 2rem; }
 
-#gallery .section-content {
-  padding-bottom: 5rem; }
-  @media only screen and (min-width: 48em) {
-    #gallery .section-content {
-      display: flex;
-      flex-wrap: wrap; } }
-  #gallery .section-content .row > div {
-    padding: 0; }
-  #gallery .section-content .gallery-bg-image {
-    height: 237px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto; }
+@media only screen and (min-width: 48em) {
+  #gallery .section-content {
+    display: flex;
+    flex-wrap: wrap; } }
+
+#gallery .section-content .row > div {
+  padding: 0; }
+
+#gallery .section-content .gallery-bg-image {
+  height: 237px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto; }

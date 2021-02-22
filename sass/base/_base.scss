@@ -27,25 +27,25 @@ html {
 
     section{
       border-bottom: solid 0.2rem $primary-red;
-      &:not(:first-child){
-        //margin-top: 25rem;
-        //margin-bottom: 25rem;
-      }
     }
+      
+  #testimonials, #about, #classes, #timetable,
+  #gallery, footer{
+    border-top: $primary-red solid 0.1rem;
+  }
 
     .section-title{
       height: 10rem;
       @include respond(tab-port) {
         height: 25rem;
       }
+      @include respond(tab-land) {
+        height: 20rem;
+      }
     
     }
   }
-  
-  #testimonials, #about, #classes, #timetable,
-  #gallery, footer{
-    border-top: $primary-red solid 0.1rem;
-  }
+
 
 
 

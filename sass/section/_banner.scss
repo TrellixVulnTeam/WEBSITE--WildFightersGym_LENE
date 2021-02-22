@@ -1,16 +1,29 @@
 .banner-introduction {
   //background-color: $primary-red;
-  
+  @include respond(tab-land) {
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row !important;
+    }
+  }
+
   &--heading {
     background-color: $primary-red;
     padding: 3rem 2rem;
     text-transform: uppercase;
+    @include respond(tab-land) {
+      min-height: 25rem;
+    }
     p {
       padding-bottom: 0;
       margin-bottom: 0;
       @include respond(tab-port) {
         margin: 0 auto;
         margin-left: 23rem;
+      }
+      @include respond(tab-land) {
+        margin-left: 0;
       }
     }
     span {
@@ -25,6 +38,11 @@
       justify-content: center;
       padding: 5rem !important;
     }
+    @include respond(tab-land) {
+      padding: 0 !important;
+      padding-top: 3rem !important;
+      justify-content: space-around;
+    }
     h6 {
       margin-bottom: 2.5rem;
       padding: 0 0.8rem;
@@ -35,49 +53,48 @@
   }
 }
 
-.banner-about {  
-    background-color: $primary-red;
-    //border-top: $primary-red solid 0.1rem;
+.banner-about {
+  background-color: $primary-red;
+  //border-top: $primary-red solid 0.1rem;
 
-    .row{
-        padding-top: 5rem !important;
+  .row {
+    padding-top: 5rem !important;
+  }
+  .accordion-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 7rem;
+    background-color: $primary-red !important;
+    width: 100%;
+    &::after {
+      background-color: #0d6efd;
+      margin-left: 1rem !important;
     }
-        .accordion-button{
-            display: flex;
-            justify-content: center;     
-            width: 100%;
-            margin: 0 auto;
-            min-height: 7rem;
-            background-color: $primary-red !important;
-            width: 100%;
-            &::after {
-                background-color: #0d6efd; 
-                margin-left: 1rem !important;
-            }
-            &:active, &:focus{
-                border-color: $primary-red !important;
-            }
-        }
-
+    &:active,
+    &:focus {
+      border-color: $primary-red !important;
+    }
+  }
 
   .card {
     background-color: $primary-red;
     color: $white;
     z-index: 1;
     margin-bottom: 5rem;
-    -webkit-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
-        -moz-box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
-        box-shadow: 0px 3px 16px -7px rgba(143,143,143,1);
-   
+    -webkit-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+    -moz-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+    box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+
     &-title {
       margin: 1rem 0;
     }
-    &-body{
-        padding: 0 !important;
-        li{
-          list-style: circle;
-        }
-        
+    &-body {
+      padding: 0 !important;
+      li {
+        list-style: circle;
+      }
     }
   }
 }
@@ -85,7 +102,7 @@
 .contact-banner {
   background-color: $primary-red;
   padding: 5rem 1rem;
- 
+
   &--header {
     display: flex;
     flex-direction: column;
@@ -103,19 +120,16 @@
     flex-direction: row;
     align-items: center;
     @include respond(tab-port) {
-      & > :not(:last-child){
+      & > :not(:last-child) {
         margin-bottom: 2rem;
       }
-    
-      }
-   
+    }
+
     a {
       margin-right: 1.5rem;
       @include respond(tab-port) {
-      margin-right: 3rem;
-    
+        margin-right: 3rem;
       }
-     
     }
   }
 }
