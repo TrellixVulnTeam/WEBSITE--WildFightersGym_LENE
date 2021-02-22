@@ -1,8 +1,15 @@
 #timetable{
    // height: 100vh;
    padding: 5rem 0;
+   .sub-heading{
+       margin-bottom: 3rem;
+   }
+
     #myTab{
         margin-top: 5rem;
+        @include respond(tab-port) {
+            justify-content: center;
+        }
         .active{
             background-color: $primary-light-gray;
             background-color: $primary-red;
