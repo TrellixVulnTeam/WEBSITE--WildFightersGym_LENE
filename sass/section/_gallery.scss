@@ -1,6 +1,6 @@
 #gallery{
     .section-content{
-        //padding: 5rem 0;
+        padding-bottom: 10rem;
         @include respond(tab-port) {
             display: flex;
             flex-wrap: wrap;

@@ -12,12 +12,18 @@
             bottom: -5%;
             @include respond(tab-port) {
                 bottom: 10%;
-              } 
+              }
+              @include respond(large-desktop) {
+                bottom: 15%;
+              }   
         }
         .carousel-item{
             height: 65vh;
             @include respond(tab-port) {
               height: 40vh;
+            }
+            @include respond(large-desktop) {
+              height: 60vh;
             }
         }
         .carousel-caption{

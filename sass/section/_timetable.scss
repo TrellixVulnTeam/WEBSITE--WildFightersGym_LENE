@@ -7,13 +7,23 @@
 
     #myTab{
         margin-top: 5rem;
+        justify-content: center;
+
         @include respond(tab-port) {
             justify-content: center;
         }
+        .nav-link{
+            min-width: 6rem !important; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .active{
-            background-color: $primary-light-gray;
             background-color: $primary-red;
             color: $white;
+            border: $primary-blue solid 0.1rem;
+            border-bottom: none !important;
+         
         }
     }
     .tab-content .row{
@@ -27,10 +37,20 @@
         justify-content: center;
         align-items: center;
         background-color: $primary-light-gray;
+        p{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
         
     }
     .btn{
-        margin-bottom: 2rem;
+        margin: 2rem 0;
+        border: $primary-blue solid 0.1rem !important; 
+        &:hover{
+            @include respond(large-desktop){
+                @include scale-up;
+            }
+        }
       }
 }  
 }

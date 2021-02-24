@@ -12,6 +12,9 @@
       left: 15%;
       top: 5%;
     }
+    @include respond(large-desktop) {
+      left: 10%;
+    } 
     img {
       width: 100%;
       height: auto;
@@ -23,9 +26,15 @@
     @include respond(tab-land) {
       height: auto;
     }
+    @include respond(large-desktop) {
+      height: 100vh;
+    }
+   
+
     .carousel-indicators {
       li {
         background-color: $primary-red !important;
+        
       }
     }
     .carousel-inner {
@@ -99,6 +108,7 @@
         -webkit-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
         -moz-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
         box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+        border: $primary-blue solid 0.1rem ;
         @include respond(tab-port) {
           margin-top: 3rem;
           font-size: 2.5rem;
@@ -107,6 +117,7 @@
           padding: 0.6rem 1rem;
           &:hover {
             background-color: lighten($color: $primary-red, $amount: 5);
+            @include scale-up;
           }
         }
       }

@@ -21,6 +21,13 @@ footer{
         }
         .social-icons{
             margin-top: 5rem;
+            a{
+                &:hover{
+                    @include respond(large-desktop){
+                        @include scale-up;
+                    }                }
+             
+            }
             .fa-facebook{
                 padding: 0 2rem 0 1rem;
             }
@@ -35,6 +42,9 @@ footer{
             background-position: center; 
             background-repeat: no-repeat; 
             background-size: contain; 
+        }
+        img{
+            height: 100px;
         }
         
     }

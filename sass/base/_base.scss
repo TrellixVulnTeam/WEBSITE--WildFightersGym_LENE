@@ -7,34 +7,38 @@
   list-style-type: none;
 }
 
-
 html {
   //*62.5% is equal to 10px = 1rem
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   body {
     //includes the padding and border in an element's total width and height
     box-sizing: border-box;
     //overflow-x: hidden;
-    a{
+    a {
       text-decoration: none !important;
     }
-    p,span{
+    p,
+    span {
       padding-bottom: 1rem;
       letter-spacing: 0.1rem;
     }
 
-    section{
+    section {
       border-bottom: solid 0.2rem $primary-red;
     }
-      
-  #testimonials, #about, #classes, #timetable,
-  #gallery, footer{
-    border-top: $primary-red solid 0.1rem;
-  }
 
-    .section-title{
+    #testimonials,
+    #about,
+    #classes,
+    #timetable,
+    #gallery,
+    footer {
+      border-top: $primary-red solid 0.1rem;
+    }
+
+    .section-title {
       height: 10rem;
       @include respond(tab-port) {
         height: 25rem;
@@ -42,11 +46,6 @@ html {
       @include respond(tab-land) {
         height: 20rem;
       }
-    
     }
   }
-
-
-
-
 }
