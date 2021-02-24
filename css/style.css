@@ -205,13 +205,22 @@ p {
   font-size: 1.7rem;
   padding-bottom: 1rem;
   line-height: 3rem; }
+  @media only screen and (min-width: 112.5em) {
+    p {
+      font-size: 1.8rem; } }
 
 li {
   font-size: 1.7rem; }
+  @media only screen and (min-width: 112.5em) {
+    li {
+      font-size: 1.8rem; } }
 
 a {
   text-decoration: none;
   font-size: 1.8rem; }
+  @media only screen and (min-width: 112.5em) {
+    a {
+      font-size: 1.9rem; } }
 
 #top-main-nav .nav-link {
   color: white;
@@ -230,6 +239,9 @@ a {
   font-size: 3rem;
   text-align: center;
   text-shadow: #000 0.1rem 0.1rem; }
+  @media only screen and (min-width: 112.5em) {
+    .section-title .section-header {
+      font-size: 3.5rem; } }
 
 .section-title .section-header-white-bg {
   color: #000;
@@ -240,6 +252,9 @@ a {
   width: 80%;
   letter-spacing: 0;
   text-align: center; }
+  @media only screen and (min-width: 112.5em) {
+    .section-title .sub-heading {
+      font-size: 1.7  rem; } }
 
 .banner-introduction--heading {
   color: #f2f2f2;
@@ -357,6 +372,9 @@ footer .footer-title h2 {
 
 footer .social-icons {
   font-size: 5rem; }
+  @media only screen and (min-width: 75em) {
+    footer .social-icons {
+      font-size: 8rem; } }
   footer .social-icons .fa-facebook {
     color: blue; }
   footer .social-icons .fa-instagram {
@@ -534,8 +552,6 @@ footer {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain; }
-    footer .section-content img {
-      height: 100px; }
   footer .all-rights {
     text-align: center;
     margin-top: 5rem;
@@ -601,6 +617,9 @@ footer {
           #hero #hero-carousel .carousel-caption p {
             font-size: 2.5rem;
             text-shadow: #000 0.2rem 0.2rem; } }
+      @media only screen and (min-width: 112.5em) {
+        #hero #hero-carousel .carousel-caption {
+          top: 70%; } }
       #hero #hero-carousel .carousel-caption h5 {
         font-size: 2.6rem;
         margin-bottom: 4.5rem;
@@ -843,6 +862,9 @@ footer {
       #testimonials #testimonial-carousel .carousel-caption {
         top: 25%;
         height: 50%; } }
+    @media only screen and (min-width: 112.5em) {
+      #testimonials #testimonial-carousel .carousel-caption {
+        top: 35%; } }
 
 #about .section-content {
   padding: 1rem; }
