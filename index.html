@@ -36,6 +36,9 @@
   <!--FONTAWESOME Style Sheet-->
   <link href="css/ionicons.min.css" rel="stylesheet" />
 
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129800469-5"></script>
@@ -54,7 +57,7 @@
   <header>
     <section id="hero">
       <div class="logo">
-        <img src="images/logo.png" alt="bull and tiger inviting to train with them" />
+        <img src="images/logo.png" alt="bull and a tiger wearing boxing gloves and inviting to train with them" />
       </div>
       <div id="hero-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
@@ -72,7 +75,7 @@
                 Our gym offers the best instructors in the city who are
                 determined to help you reach your potential.
               </p>
-              <a href="#timetable" class="btn hero-btn">Book class</a>
+              <a href="#timetable" class="btn hero-btn ">Book class</a>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
@@ -120,7 +123,7 @@
           </div>
         </button>
         <div class="collapse navbar-collapse" id="top-main-nav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-sm-auto">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-sm-auto" alt="website navigation">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#testimonials">testimonials</a>
             </li>
@@ -149,24 +152,34 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-2 col-md-12 col-sm-12 p-0">
-          <div class="banner-introduction--heading d-flex flex-column justify-content-center">
-            <p>Do you</p>
+          <div class="banner-introduction--heading d-flex flex-column justify-content-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+            <p >Do you</p>
             <span>Want to:</span>
           </div>
         </div>
         <div class="banner-introduction--body col-lg-10">
-          <div class="col-lg-5 col-md-6 col-sm-6 pt-3">
-            <h6>Be able to <b>Self-Defense</b>?</h6>
-            <h6>Become <b>Self-Confident</b>?</h6>
-            <h6>Have <b>Self-Discipline</b>?</h6>
-            <h6>Learn <b> Life Skills</b> and <b>Values</b>?</h6>
+          <div class="col-lg-5 col-md-6 col-sm-6 pt-3 mb-3">
+            <h6 data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">Be able to <b>Self-Defense</b>?</h6>
+            <h6 data-aos="zoom-in" data-aos-duration="700" data-aos-delay="400">Become <b>Self-Confident</b>?</h6>
+            <h6 data-aos="zoom-in" data-aos-duration="700" data-aos-delay="600">Have <b>Self-Discipline</b>?</h6>
+            <h6 data-aos="zoom-in" data-aos-duration="700" data-aos-delay="800">Learn <b> Life Skills</b> and <b>Values</b>?</h6>
           </div>
-          <div class="col-lg-5 col-md-6 col-sm-6 pt-3">
-            <h6>Become <b>Physicaly Fit</b>?</h6>
-            <h6>Stimulate <b>Personal Growth</b>?</h6>
-            <h6>Make new <b>Friends</b> and <b>Family</b>?</h6>
-            <h6><b>Lose Weight </b> and <b>Increase Health</b>?</h6>
+          <div class="col-lg-5 col-md-6 col-sm-6 pt-3 mb-3">
+            <h6 data-aos="zoom-in" data-aos-duration="700" data-aos-delay="1000">Become <b>Physicaly Fit</b>?</h6>
+            <h6 data-aos="zoom-in" data-aos-duration="700" data-aos-delay="1200">Stimulate <b>Personal Growth</b>?</h6>
+            <h6 data-aos="zoom-in" data-aos-duration="700" data-aos-delay="1400">Make new <b>Friends</b> and <b>Family</b>?</h6>
+            <h6 data-aos="zoom-in" data-aos-duration="700" data-aos-delay="1600"><b>Lose Weight </b> and <b>Increase Health</b>?</h6>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="sticky-banner" class="col-12 banner-introduction--footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1800">
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">Don't hesitate</span>
+          <p>and <b>join</b></p>
+          <h1>Martial arts</h1>
+          <span class="gym-name">WildFightersGym</span>
+           <p>To <b>become</b></p> 
+           <p><b>better</b> version of yourself!</p>
         </div>
       </div>
     </div>
@@ -337,7 +350,7 @@
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <ul>
+                      <ul >
                         <p>Darius Skliaudys</p>
                         <li>Muay Thai Champion of Lithuania.</li>
                         <li>Muay Thai Champion of Russia.</li>
@@ -390,7 +403,7 @@
   </section>
 
   <section id="about">
-    <div class="container-fluid">
+    <div class="container-fluid" style="overflow: hidden;">
       <div class="row">
         <div class=" col-lg-6 col-md-12 col-sm-12 about-left">
           <div class="section-title">
@@ -421,25 +434,25 @@
         </div>
         <!--col ends-->
         <div class=" col-lg-6 col-md-12 col-sm-12 about-right">
-          <div class="features">
+          <div class="features" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
             <i class="icon ion-ios-people"></i>
             <h4>Open door policy</h4>
             <p>
               Everybody is welcome into our gym, no matter what age or gender.
             </p>
           </div>
-          <div class="features">
+          <div class="features" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
             <i class="icon ion-arrow-graph-up-right"></i>
             <h4>Growth</h4>
             <p>The opportunity to grow and participate in events.</p>
           
           </div>
-          <div class="features">
+          <div class="features" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
             <i class="icon ion-trophy"></i>
             <h4>Trained champs</h4>
             <p>Over the years we’ve nurtured and trained many champions.</p>
           </div>
-          <div class="features">
+          <div class="features" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
             <i class="icon ion-clock"></i>
             <h4>Multiple classes</h4>
             <p>We schedule multiple classes at various times in the week.</p>
@@ -454,7 +467,7 @@
   </section>
 
   <section id="classes">
-    <div class="container-fluid">
+    <div class="container-fluid" style="overflow: hidden;">
       <div class="row">
         <div class="col-md-12">
           <div class="section-title">
@@ -472,7 +485,7 @@
                   <h3>Muay Thai</h3>
                 </div>
                 <div class="classes-bg-image" style="background-image: url(images/lessons/muay_thai.jpg)"></div>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
                   What is Muay Thai?
                 </button>
                 <!-- Button trigger modal -->
@@ -513,7 +526,7 @@
                     "></div>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
                   What is Muay Thai?
                 </button>
                 <!-- Modal -->
@@ -551,7 +564,7 @@
                       background-image: url(images/lessons/kick_boxing.jpg);
                     "></div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                   What is Kickboxing?
                 </button>
                 <!-- Modal -->
@@ -590,7 +603,7 @@
                       background-image: url(images/lessons/Brazilian_jiu-jitsu.jpg);
                     "></div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                   What is Brazilian jiu-jitsu?
                 </button>
                 <!-- Modal -->
@@ -627,7 +640,7 @@
                 </div>
                 <div class="classes-bg-image" style="background-image: url(images/lessons/k1_boxing.jpg)"></div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
                   What is K-1?
                 </button>
                 <!-- Modal -->
@@ -667,11 +680,11 @@
                       background-image: url(images/lessons/crossfit_gym.jpg);
                     "></div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
                   What is CrossFit Gym?
                 </button>
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
@@ -964,7 +977,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="contact-banner--button">
+          <div class="contact-banner--button" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
             <a class="btn btn-success" href="https://goo.gl/maps/V8WjmghtkdrBdbtV8" target="_blank">Get Directions</a>
           </div>
         </div>
@@ -977,29 +990,38 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-title">
-            <h2 class="section-header section-header-white-bg">
+            <h2 class="section-header section-header">
               Photo gallery
             </h2>
             <div class="header-undirline"></div>
           </div>
-          <div class="section-content">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image" style="background-image: url(images/gallery/image-1.jpg)">
+          <div class="section-content" style="overflow: hidden;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
+             style="background-image: url(images/gallery/image-1.jpg)" >
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image" style="background-image: url(images/gallery/image-2.jpg)">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
+             style="background-image: url(images/gallery/image-2.jpg)">
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image" style="background-image: url(images/gallery/image-3.jpg)">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
+             style="background-image: url(images/gallery/image-3.jpg)">
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image" style="background-image: url(images/gallery/image-4.jpg)">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
+             style="background-image: url(images/gallery/image-4.jpg)">
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image" style="background-image: url(images/gallery/image-5.jpg)">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
+             style="background-image: url(images/gallery/image-5.jpg)">
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image" style="background-image: url(images/gallery/image-6.jpg)">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
+             style="background-image: url(images/gallery/image-6.jpg)">
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image" style="background-image: url(images/gallery/image-7.jpg)">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
+             style="background-image: url(images/gallery/image-7.jpg)">
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image" style="background-image: url(images/gallery/image-8.jpg)">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
+             style="background-image: url(images/gallery/image-8.jpg)">
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image" style="background-image: url(images/gallery/image-9.jpeg)">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
+             style="background-image: url(images/gallery/image-9.jpeg)">
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 gallery-bg-image"
               style="background-image: url(images/gallery/image-10.jpeg)"></div>
@@ -1029,7 +1051,7 @@
       <div class="row">
         <div class="col-xl-4 col-md-9 col-sm-4 mx-md-auto">
           <div class="contact-banner--info">
-            <a href="mailto:Majukasmikaliak@gmail.com"><i class="ion-at"></i></a>
+            <a href="mailto:Majukasmikaliak@gmail.com"><i class="ion-at" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400"></i></a>
             <div class="">
               <h6>Email</h6>
               <p>Majukasmikaliak@gmail.com</p>
@@ -1038,7 +1060,7 @@
         </div>
         <div class="col-xl-4 col-md-9 col-sm-4 mx-md-auto">
           <div class="contact-banner--info">
-            <a href="tel:+447481259120"><i class="fa fa-phone"></i></a>
+            <a href="tel:+447481259120"><i class="fa fa-phone" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600"></i></a>
             <div class="">
               <h6>Telephone</h6>
               <p>074 8125 9120</p>
@@ -1047,7 +1069,7 @@
         </div>
         <div class="col-xl-4 col-md-9 col-sm-4 mx-md-auto">
           <div class="contact-banner--info">
-            <a href="https://goo.gl/maps/V8WjmghtkdrBdbtV8" target="_blank"><i class="ion-navigate"></i></a>
+            <a href="https://goo.gl/maps/V8WjmghtkdrBdbtV8" target="_blank"><i class="ion-navigate"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800"></i></a>
             <div class="">
               <h6>Address</h6>
               <p class="mb-0">7-9 Sebert Road, E7 0NG, Forest Gate, London</p>
@@ -1150,8 +1172,8 @@
           <div class="all-rights">
             <p>
               &copy; Wild Fighters Gym 2018/2021. All rights reserved.<br />
-              <a href="https://www.web-knack.com" title="Website design by Web-Knack">Website design by
-                <spam style="color: #3d59e8">Web-Knack</spam>
+              <a href="https://www.web-knack.com" title="Website design by Web-Knack" style="font-size: 14px;">Website design by
+                <spam style="color: gold">Web-Knack</spam>
               </a>
             </p>
           </div>
@@ -1161,6 +1183,8 @@
       <!--row ends-->
     </div>
   </footer>
+  <script src="js/aos-animation.js"></script>
+  <script src="js/sticky-onScroll.js"></script>
 </body>
 
 </html>

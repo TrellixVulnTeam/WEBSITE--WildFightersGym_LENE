@@ -1,6 +1,6 @@
 window.onscroll = function() {myFunction()};
         
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById("sticky-banner");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
@@ -11,11 +11,3 @@ function myFunction() {
   }
 }
 
-/*CSS
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-*/

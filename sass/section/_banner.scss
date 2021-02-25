@@ -1,7 +1,7 @@
 .banner-introduction {
   //background-color: $primary-red;
   @include respond(tab-land) {
-    .row{
+    .row {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row !important;
@@ -51,6 +51,19 @@
       }
     }
   }
+  &--footer{
+    background-color: $primary-red;
+    border-top: $border-gray solid 0.1rem;
+    -webkit-box-shadow: 1px 11px 25px -13px rgba(255,255,255,1);
+-moz-box-shadow: 1px 11px 25px -13px rgba(255,255,255,1);
+box-shadow: 1px 11px 25px -13px rgba(255,255,255,1);
+    @include flex-jc-ai-fdir-fwrap(center, center, column, wrap); 
+    @include respond(tab-port){
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+  }
 }
 
 .banner-about {
@@ -58,7 +71,6 @@
   //border-top: $primary-red solid 0.1rem;
   @include respond(large-desktop) {
     overflow: hidden;
-  
   }
 
   .row {
@@ -66,27 +78,18 @@
     @include respond(tab-land) {
       padding-top: 1rem !important;
     }
-   
-  
   }
   .accordion-button {
-    display: flex;
-    justify-content: center;
+    @include flex-jc-ai-fdir-fwrap(center, center, row, nowrap); 
     width: 100%;
     margin: 0 auto;
     min-height: 7rem;
-    background-color: $primary-red !important;
     width: 100%;
-    @include respond(large-desktop) {
-      &:hover {
-        @include scale-up;
-      }
-    }
-   
+    @include main-button-settings;
+    background-color: $primary-red !important;
     &::after {
       background-color: $primary-blue;
       margin-left: 1rem !important;
-      
     }
     &:active,
     &:focus {
@@ -99,25 +102,20 @@
     color: $white;
     z-index: 1;
     margin-bottom: 5rem;
-    -webkit-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
-    -moz-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
-    box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+   @include shadow;
     @include respond(tab-land) {
       margin-bottom: 1rem !important;
-      }
+    }
     &-title {
       margin: 1rem 0;
     }
     &-body {
       padding: 0 !important;
-     
+
       li {
         list-style: circle;
       }
     }
-
-
-    
   }
 }
 
@@ -126,39 +124,26 @@
   padding: 5rem 1rem;
 
   &--header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-jc-ai-fdir-fwrap(center, center, column, nowrap); 
     padding: 1rem 1rem;
   }
   &--button {
     text-align: center;
-    border-radius: 0.3rem;
     margin-top: 1.5rem;
-    .btn{
-      border: $primary-blue solid 0.1rem;
-      &:hover{
-        @include respond(large-desktop) {
-          @include scale-up;
-        }
-      }
-
+    .btn {
+      @include main-button-settings;
+      background-color: $primary-green;
     }
   }
   &--info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex-jc-ai-fdir-fwrap(flex-start, center, row, nowrap); 
     @include respond(tab-port) {
       & > :not(:last-child) {
         margin-bottom: 2rem;
       }
     }
     @include respond(large-desktop) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-jc-ai-fdir-fwrap(center, center, row, nowrap); 
       min-height: 13rem;
     }
 
@@ -167,12 +152,11 @@
       @include respond(tab-port) {
         margin-right: 3rem;
       }
-      @include respond(large-desktop){
-        &:hover{
+      @include respond(large-desktop) {
+        &:hover {
           @include scale-up;
+        }
       }
-    }
-     
     }
   }
 }

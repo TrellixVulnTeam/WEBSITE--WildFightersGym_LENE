@@ -18,16 +18,10 @@
     .about-right{
         color: $font-gray;
         @include respond(tab-port) {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-           
+            @include flex-jc-ai-fdir-fwrap(center, stretch, row, wrap);     
             & >:nth-child(3) { 
                 border-bottom: none !important;
-               
               }
-          
             }
     
         padding-top: 3rem;
@@ -36,10 +30,7 @@
           }     
         .features{
             margin: 1rem 0; 
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
+            @include flex-jc-ai-fdir-fwrap(flex-start, center, column, nowrap); 
             padding: 1rem;
             @include respond(tab-port) {
                 width: 40%;

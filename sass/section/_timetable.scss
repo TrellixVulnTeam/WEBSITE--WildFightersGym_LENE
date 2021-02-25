@@ -1,56 +1,39 @@
-#timetable{
-   // height: 100vh;
-   padding: 5rem 0;
-   .sub-heading{
-       margin-bottom: 3rem;
-   }
+#timetable {
+  // height: 100vh;
+  padding: 5rem 0;
+  .sub-heading {
+    margin-bottom: 3rem;
+  }
 
-    #myTab{
-        margin-top: 5rem;
-        justify-content: center;
-
-        @include respond(tab-port) {
-            justify-content: center;
-        }
-        .nav-link{
-            min-width: 6rem !important; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .active{
-            background-color: $primary-red;
-            color: $white;
-            border: $primary-blue solid 0.1rem;
-            border-bottom: none !important;
-         
-        }
+  #myTab {
+    margin-top: 5rem;
+    justify-content: center;
+    .nav-link {
+      min-width: 6rem !important;
+      @include flex-jc-ai-fdir-fwrap(center, center, row, nowrap); 
     }
-    .tab-content .row{
-        border-bottom: $border-gray solid 0.1rem;
-        padding: 3rem 0;
-        background-color: $primary-light-gray;
-
-     & > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $primary-light-gray;
-        p{
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-        
+    .active {
+      @include main-button-settings;
+      border-bottom: none !important;
     }
-    .btn{
-        margin: 2rem 0;
-        border: $primary-blue solid 0.1rem !important; 
-        &:hover{
-            @include respond(large-desktop){
-                @include scale-up;
-            }
-        }
+  }
+  .tab-content .row {
+    border-bottom: $border-gray solid 0.1rem;
+    padding: 3rem 0;
+    background-color: $primary-light-gray;
+
+    & > div {
+     @include flex-jc-ai-fdir-fwrap(center, center, column, nowrap); 
+      background-color: $primary-light-gray;
+      p {
+        padding-bottom: 0;
+        margin-bottom: 0;
       }
-}  
+    }
+    .btn {
+      margin: 2rem 0;
+      @include main-button-settings;
+      background-color: $primary-green;
+    }
+  }
 }

@@ -46,10 +46,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
-//ABSOLUTE CENTER
-@mixin absolte-center {
-    transform: translate(-50%, -50%);
-}
+
 
 //MARGIN LEFT/RIGHT AUTO
 @mixin margin-auto{
@@ -70,65 +67,39 @@ ORDER: Base + typography > general layout + grid > page layout > components
     transition: 0.5s; 
 }
 
-
-//Border
-@mixin border($color) {
-      border: 0.1rem solid $color; //Enter on @include border(color)
-      -webkit-box-shadow: 1.8rem -1.6rem 4.7rem 0rem rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 1.8rem -1.6rem 4.7rem 0rem rgba(0, 0, 0, 0.75);
-      box-shadow: 1.8rem -1.6rem 4.7rem 0rem rgba(0, 0, 0, 0.75);
+//BUTTON 
+@mixin main-button-settings {
+    background-color: $primary-red;
+    color: white;
+    border: $primary-blue solid 0.1rem;
+    -webkit-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+    -moz-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+    box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+    &:hover{
+      @include respond(large-desktop) {
+        @include scale-up;
+        background-color: lighten($color: $primary-red, $amount: 5);
+      }
+    }
   }
 
-//GRID
-  @mixin grid-template($grid-area...){
-    min-height: 50rem;
-    display: grid;
-    grid-area: $grid-area; //Enter on @include grid-template-mobile(area-name)
-    grid-template-columns: 1fr 1fr; // 2 elements per row
-    grid-gap: 1rem; 
-    }
-
-  @mixin grid-template-mobile($flex-direction...) {
-    grid-template-columns: 1fr; // 1 element per row
+//FLEX-CENTER  
+@mixin flex-jc-ai-fdir-fwrap($content, $items, $direction, $wrap...) {
     display: flex;
-    flex-direction: $flex-direction;//Enter on @include grid-template-mobile(column/reverse column)
-     }
+    justify-content: $content;
+    align-items: $items;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+ }
 
+  @mixin shadow {
+    -webkit-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+    -moz-box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+    box-shadow: 0px 3px 16px -7px rgba(143, 143, 143, 1);
+}
 
-//ANIMATION-DELAY
-@mixin animation-delay($time...) { //Enter on @include animation-delay(4s)
-    -webkit-animation-delay: $time;
-    -moz-animation-delay: $time;
-    -o-animation-delay: $time;
-    -ms-animation-delay: $time;
-    animation-delay: $time;
-     }
-
-
-//BACKGROUND IMAGE HEIGHT
-@mixin background-image($height...) { //Enter on @include background-image(20vw)
-    position: relative;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: $height;
-     }
-
-
-//BUTTONS
-     @mixin button-hover($background-color, $font-color...) {
-        background-color: $background-color;
-        box-shadow: 0rem 0rem 1rem $color, 0rem 0rem 1rem $color;
-        color: $font-color;
-        text-shadow: black 0.1rem 0.1rem;
-        @include scale-up;
-     }
-
- 
-
-
+  
+  
 
 
 
